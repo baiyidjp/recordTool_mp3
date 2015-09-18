@@ -14,6 +14,8 @@
 		F58CEFE61BABE76500345B51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58CEFE51BABE76500345B51 /* Images.xcassets */; };
 		F58CEFE91BABE76500345B51 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58CEFE71BABE76500345B51 /* LaunchScreen.xib */; };
 		F58CEFF51BABE76500345B51 /* recordToolDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F58CEFF41BABE76500345B51 /* recordToolDemoTests.m */; };
+		F58CF00A1BABE81A00345B51 /* JPAVRecordTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F58CF0071BABE81A00345B51 /* JPAVRecordTool.m */; };
+		F58CF00B1BABE81A00345B51 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F58CF0091BABE81A00345B51 /* libmp3lame.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		F58CEFEE1BABE76500345B51 /* recordToolDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recordToolDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58CEFF31BABE76500345B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F58CEFF41BABE76500345B51 /* recordToolDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = recordToolDemoTests.m; sourceTree = "<group>"; };
+		F58CF0061BABE81A00345B51 /* JPAVRecordTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPAVRecordTool.h; sourceTree = "<group>"; };
+		F58CF0071BABE81A00345B51 /* JPAVRecordTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAVRecordTool.m; sourceTree = "<group>"; };
+		F58CF0081BABE81A00345B51 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		F58CF0091BABE81A00345B51 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F58CF00B1BABE81A00345B51 /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,7 @@
 		F58CEFD71BABE76500345B51 /* recordToolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F58CF0051BABE81A00345B51 /* lib */,
 				F58CEFDC1BABE76500345B51 /* AppDelegate.h */,
 				F58CEFDD1BABE76500345B51 /* AppDelegate.m */,
 				F58CEFDF1BABE76500345B51 /* ViewController.h */,
@@ -117,6 +125,17 @@
 				F58CEFF31BABE76500345B51 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F58CF0051BABE81A00345B51 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F58CF0061BABE81A00345B51 /* JPAVRecordTool.h */,
+				F58CF0071BABE81A00345B51 /* JPAVRecordTool.m */,
+				F58CF0081BABE81A00345B51 /* lame.h */,
+				F58CF0091BABE81A00345B51 /* libmp3lame.a */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F58CEFE11BABE76500345B51 /* ViewController.m in Sources */,
+				F58CF00A1BABE81A00345B51 /* JPAVRecordTool.m in Sources */,
 				F58CEFDE1BABE76500345B51 /* AppDelegate.m in Sources */,
 				F58CEFDB1BABE76500345B51 /* main.m in Sources */,
 			);
@@ -349,6 +369,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = recordToolDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/recordToolDemo/lame",
+					"$(PROJECT_DIR)/recordToolDemo/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -359,6 +384,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = recordToolDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/recordToolDemo/lame",
+					"$(PROJECT_DIR)/recordToolDemo/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -416,6 +446,7 @@
 				F58CEFFA1BABE76500345B51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F58CEFFB1BABE76500345B51 /* Build configuration list for PBXNativeTarget "recordToolDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +455,7 @@
 				F58CEFFD1BABE76500345B51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
