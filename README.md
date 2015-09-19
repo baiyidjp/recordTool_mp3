@@ -22,24 +22,24 @@ self.recordTool = recordTool;
 
 //开始录音
 
-[self startRecording];
+[self.recordTool  startRecording];
 
 //停止录音(自动保存,可以查看沙盒目录)
 
-[self stopRecording];
+[self.recordTool  stopRecording];
 
 //播放本地/在线录音文件(播放本地 url传nil 播放网络资源 path传nil)
 
-[self playRecordingFileWithRecordPath:(NSString *)recordPath orRecordUrl:(NSURL *)recordUrl]
+[self.recordTool  playRecordingFileWithRecordPath:(NSString *)recordPath orRecordUrl:(NSURL *)recordUrl]
 
 //停止播放
 
-[self stopPlaying];
+[self.recordTool  stopPlaying];
 
 //销毁录音文件
 
-[self destructionRecordingFile];
+[self.recordTool  destructionRecordingFile];
 
 //转MP3格式(录音完成自动执行)
 
-[self transformCAFToMP3];
+[self.recordTool  transformCAFToMP3];

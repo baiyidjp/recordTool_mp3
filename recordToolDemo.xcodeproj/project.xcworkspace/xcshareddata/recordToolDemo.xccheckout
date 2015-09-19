@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>30F9EBEC-48C5-446A-8B63-74E5481A2DBA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>recordToolDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EBC635A6D256DA5D317AA84A3A07518A779781AF</key>
+		<string>https://github.com/baiyidjp/recordTool-mp3.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>recordToolDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EBC635A6D256DA5D317AA84A3A07518A779781AF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/baiyidjp/recordTool-mp3.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EBC635A6D256DA5D317AA84A3A07518A779781AF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EBC635A6D256DA5D317AA84A3A07518A779781AF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>recordTool-mp3</string>
+		</dict>
+	</array>
+</dict>
+</plist>
